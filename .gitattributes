@@ -1,2 +1,5 @@
+# Ignore
+# This is for GitHub to properly detect the language of the project.
+
 static/* linguist-vendored
 templates/* linguist-vendored

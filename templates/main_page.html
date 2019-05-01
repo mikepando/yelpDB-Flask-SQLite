@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <title>PLEY - Bronx</title>
+    </head>
+
+    <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Welcome to Pley</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<h2>Find a business using the following criteria:<br></h2>
+
+<div class="row">
+<h3><u>Select Minimum Business Rating</u></h3>
+<form action="response" method="POST">
+<input type="radio" name="minRating" id="1" value="1" checked>1<br>
+<input type="radio" name="minRating" id="2" value="2">2<br>
+<input type="radio" name="minRating" id="3" value="3">3<br>
+<input type="radio" name="minRating" id="4" value="4">4<br>
+<input type="radio" name="minRating" id="5" value="5">5<br>
+<br>
+<h3><u>Select Business Category</u></h3>
+<select name="category">
+{% for element in categories %}
+   <option value="{{element}}">{{element}}</option>
+{% endfor %}
+</select>
+</select>
+<br>
+<br>
+<h3>Sort Businesses By</h3>              
+<select name="sorting">
+<option value="neighborhood">Neighborhood</option>
+<option value="rating">Rating</option>
+<option value="neighborhood_rating">Rating Within Neighborhood</option> 
+</select>
+<br>
+<br>
+<input type="submit" value="Display Matching Businesses">
+</div>
+            </form>
+</div><!-- HTML and Boostrap from Flask tutorial http://blog.pythonanywhere.com/121/  -->
+    </body>
+</html>

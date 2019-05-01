@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <title>PLEY - Bronx</title>
+    </head>
+
+    <body>
+    
+    <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Welcome to Pley</a>
+    </div>
+  </div>
+</nav>
+<center><h2>Results</h2></center>
+
+<div class="container">
+<table class="table">
+<tr><th>Business Name</th><th>Rating</th><th>Categories</th><th>Address</th>
+<th>Neighborhood</th><th>Phone</th><th>URL</th></tr>
+{% for element in data %}
+   <tr class="active">
+       <td>
+        {{ element[1] }}
+        </td>
+        <td>
+        {{ element[2] }}
+        </td>
+        <td>
+        {{ element[3]}}
+        </td>
+        <td>
+        {{ element[4]}}
+        </td>
+        <td>
+        {{ element[5]}}
+        </td>
+        <td>
+        {{ element[6]}}
+        </td>
+        <td>
+        <a href={{element[7]}}>Yelp Review</a>
+        </td>
+    </tr>
+{% endfor %}
+ </table>
+</div>
+    </body>
+</html>

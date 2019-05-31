@@ -1,4 +1,4 @@
-# Searching a Scraped Yelp Database with Python
+# Searching a Scraped Database with Python
 This is a project utilizing Flask and SQLite to allow us to search a database using Python. This uses a sqlite DB containing 100 restaurant records scraped from Yelp. Flask allows us to run a local server to search the database with specific criteria. 
 
 ### Prerequisites

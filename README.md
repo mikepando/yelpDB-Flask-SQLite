@@ -20,4 +20,4 @@ A python interpreter (I used Spyder IDE)
 * [SQLite 3](https://www.sqlite.org/index.html) - The library used for the database
 
 ## Disclaimer
-This was made for educational purposes. It is not meant to be complex but was intended to test Python alongside Flask and SQLite. `Pley` is Yelp backwards and is not intended to infringe on their trademark. 
+This was made for educational purposes. It is not meant to be complex but was intended to test Python alongside Flask and SQLite. `Pley` is Yelp backwards and is not intended to infringe on their trademark. This was for the CIS 431 Design and Analysis course at Manhattan College.
